@@ -1,0 +1,1 @@
+export const testTemplate = (count) => `<p> Edit <code>src/App.js</code> ${count} </p>`

@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import ComponentFromHtml from "./components/ComponentFromHtml";
+import Test from "./components/Test";
 
 function App() {
+
+  const data = {
+    name: "лапша",
+    weight: "42кг",
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ComponentFromHtml filePath={"assets/templates/test2.html"} data={data}>
+      <Test/>
+    </ComponentFromHtml>
   );
 }
 
